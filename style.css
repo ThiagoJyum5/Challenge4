@@ -1,0 +1,133 @@
+﻿*{
+    margin:0;
+    padding:0;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.container {
+    height: 100%;
+    background: hsl(233, 47%, 7%);
+    display:flex;
+}
+
+.box {
+    background: hsl(244, 38%, 16%);
+    display: flex;
+    flex-direction: row-reverse;
+    height: 560px;
+    width: 1200px;
+    margin: auto;
+    border-radius:8px
+}
+
+.text{
+    padding:80px;
+}
+
+.tittle {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+    letter-spacing:1.1px;
+    margin-bottom:30px;
+}
+.insights {
+    color: hsl(277, 64%, 61%);
+}
+
+.description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.7;
+}
+
+.img{
+    height:100%;
+
+}
+
+.img-1 {
+    height: 100%;
+    filter: opacity(0.4) drop-shadow(0 0 0 violet);
+    border-top-right-radius: 8px;
+    border-bottom-right-radius:8px;
+}
+
+.info{
+    display:flex;
+    justify-content:space-between;
+    bottom:30px;
+    margin-top:175px;
+}
+
+.number {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: hsl(0, 0%, 100%);
+}
+
+.desc {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.6);
+    text-transform:uppercase;
+}
+
+@media screen and (max-width: 480px){
+     .box{
+         width: 325px;
+         height:790px;
+         display:flex;
+         flex-direction:column;
+         padding: 0;
+     }
+
+     .text{
+         margin-top:23px;
+         padding:20px;
+     }
+
+     .tittle{
+         font-size: 28px;
+         text-align:center;
+         margin-bottom:15px;
+     }
+
+     .description{
+         text-align:center;
+         font-size:15px;
+     }
+     .img{
+         width:100%;
+         height: 250px;
+     }
+
+    .img-1 {
+        width: 100%;
+        height: 100%;
+        border-top-left-radius: 10px;
+    }
+
+     .info{
+         display:flex;
+         flex-direction:column;
+         position:static;
+         margin-top:20px;
+         text-align:center;
+         
+     }
+
+     .companies, .templates, .queries{
+         padding:10px;
+         line-height:1.5;
+         font-size:15px;
+     }
+}
